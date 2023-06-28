@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 18px;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: 2px solid grey;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color:#7fff4d;
+        }
+        #violet{
+            background-color: violet;
+        }
+        #black{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function changeBg(color){
+            document.body.style.backgroundColor=color;
+            var text=document.getElementsByClassName("text");
+            if(color=="#000000"){
+                for(let elm of text){
+                elm.style.color="white";
+                }
+            }else{
+                for(let elm of text){
+                elm.style.color="black";
+                }
+            }        
+        }
+
+    </script>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBg('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBg('#7fff4d')"></span>
+        <span class="btn" id="violet" onclick="changeBg('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBg('#000000')"></span>
+    </div>
+    <h1 class="text">About us</h1>
+    <img src="https://picfiles.alphacoders.com/421/421876.jpg" alt="">
+    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum et in ratione delectus consectetur perferendis laboriosam, eveniet, dolore nisi repudiandae ea officiis molestiae. Delectus, incidunt fugiat! Adipisci tempora aliquam, corporis, minus facere architecto officia eum itaque optio velit in temporibus. Nulla dolorum quidem dolore, cum ea dolorem voluptatum exercitationem minus nesciunt corporis! Delectus porro, neque sed sint iste eius, asperiores, quaerat laboriosam sapiente enim nulla reprehenderit ea itaque consequatur ullam earum voluptatibus assumenda odit. Consequuntur culpa exercitationem quasi porro architecto. Consequuntur quas velit alias vitae consequatur at aliquid laboriosam nihil dicta totam mollitia deserunt molestias eum laudantium distinctio, hic enim quisquam deleniti quaerat voluptas, doloribus repudiandae unde exercitationem. Necessitatibus quo eos, mollitia aperiam nobis, nisi harum, molestiae sit consequatur labore possimus itaque et. Exercitationem cupiditate minus doloribus officiis quam quia odio necessitatibus, officia fuga perspiciatis voluptate doloremque commodi nesciunt ex praesentium eos vel unde ad incidunt illo! Quod, iusto dolores. Nam esse rem harum eos commodi asperiores! Nemo, consectetur quam cum ab minus tenetur veritatis voluptatibus, ratione omnis repellat cupiditate at aliquam praesentium unde eaque. Tenetur doloremque vitae expedita mollitia, culpa repellat dolor consequuntur nostrum suscipit quaerat eveniet iure pariatur blanditiis saepe ab necessitatibus unde! Maiores obcaecati accusamus esse, id eius suscipit corporis, error, cum inventore aperiam nostrum ipsum cumque. Quidem ad quaerat fugiat aliquam, impedit harum corporis animi tenetur nisi vero eligendi adipisci minima. Tempore magnam incidunt dignissimos voluptatibus ipsa consequuntur vitae fuga veniam, voluptas harum doloribus possimus tenetur esse repudiandae neque provident debitis iusto. Quibusdam cum, mollitia dolorum sed quos non tempore laborum nisi molestiae aut saepe expedita repellat rem doloremque nesciunt odio ab in. Neque vero hic modi id laborum blanditiis. Neque cumque ex blanditiis, vel rem error delectus nemo, sunt excepturi, at modi amet iste. Illum itaque officia ipsam vitae labore fugit vero facilis suscipit rerum veniam quaerat eos, nemo obcaecati! Aliquam facilis minus earum corrupti assumenda iure repellat quidem. Obcaecati perspiciatis amet reprehenderit reiciendis iusto ipsam labore saepe minus, error omnis atque eius, quidem nihil? Ea, corrupti, accusantium deserunt dolore doloremque ipsum error qui optio a accusamus ipsam eaque, voluptate aperiam beatae. Deleniti, odit hic. Illum possimus excepturi quasi veritatis voluptatum architecto, delectus voluptates consectetur quia in ipsam sapiente odit sint quae adipisci? Nobis corrupti excepturi labore voluptates minus ducimus earum vero facere, amet est ullam itaque cum quia adipisci reprehenderit. Nemo cupiditate, reprehenderit officiis modi non ad doloremque sit nisi quae? Esse, non aliquid? Perferendis officiis recusandae laudantium, sit veritatis sunt harum quo earum commodi laboriosam reprehenderit distinctio vel vitae deserunt obcaecati a, atque saepe assumenda vero similique quos quibusdam eos? Rem impedit aliquam recusandae cupiditate reprehenderit maiores saepe ipsa provident repudiandae unde? Sunt eligendi modi ipsa dignissimos sequi unde voluptas veritatis. Est id alias qui nemo et dolorem pariatur at aut, nostrum ex sit tempora odit fugiat porro quaerat fuga voluptates deleniti cum! Quaerat pariatur praesentium obcaecati optio vel voluptatibus fugiat repellendus at libero eum laborum quos architecto similique ea velit dicta consequatur repudiandae, magnam animi rerum hic dolor ipsum temporibus. Cupiditate, nostrum!</p>
+</body>
+</html>
